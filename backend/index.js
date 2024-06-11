@@ -7,7 +7,7 @@ const app=express()
 app.use(express.json())
 app.use(cors(
     {
-        origin:["https://frontend-web-lime.vercel.app/"],
+        origin:["https://frontend-web-lime.vercel.app"],
          method:["POST","GET"],
         credentials:true
 )); 

@@ -14,7 +14,7 @@ function Create() {
     event.preventDefault();
 
     
-    axios.post('http://localhost:8080/create', {title,thought})
+    axios.post('justhought.vercel.app/create', {title,thought})
       .then((response) => {
         console.log('Response:', response);
       })

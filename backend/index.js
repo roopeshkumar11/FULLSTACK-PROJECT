@@ -5,7 +5,12 @@ const cors=require("cors")
 
 const app=express()
 app.use(express.json())
-app.use(cors()); 
+app.use(cors(
+    {
+        origin:["https://frontend-web-lime.vercel.app/"],
+         method:["POST","GET"],
+        credentials:true
+)); 
 const PORT=process.env.PORT || 8080
 
 

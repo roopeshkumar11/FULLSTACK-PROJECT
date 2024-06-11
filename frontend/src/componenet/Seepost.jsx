@@ -15,7 +15,7 @@ function Seepost() {
   console.log(id)
 
   useEffect(() => {
-    axios.get(`http://localhost:8080/see/${id}`)
+    axios.get(`justhought.vercel.app/see/${id}`)
       .then((response) => {
         setData(response.data);
         // console.log(response.data)
@@ -26,7 +26,7 @@ function Seepost() {
   const handledelete=()=>{
     
     
-  axios.delete(`http://localhost:8080/see/${id}`)
+  axios.delete(`justhought.vercel.app/see/${id}`)
   .then((reponse)=>{
    
     console.log("delete",reponse)

@@ -9,10 +9,14 @@ import Show from './componenet/Show';
 import Home from './componenet/Home';
 import Update from './componenet/Update';
 import Seepost from './componenet/Seepost';
+import axios from "axios
+
+
 
 
 
 function App() {
+  axios.defaults.withCredentials=true
   return (
    
 

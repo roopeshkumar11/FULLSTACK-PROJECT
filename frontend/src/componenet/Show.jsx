@@ -9,7 +9,7 @@ function Show() {
   const [data,setdata]=useState([])
 
   useEffect(()=>{
-    axios.get("http://localhost:8080/show")
+    axios.get("justhought.vercel.app/show")
     .then((reponse)=>{
       setdata(reponse.data)
         console.log(reponse.data)

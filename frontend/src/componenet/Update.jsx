@@ -15,7 +15,7 @@ function Update() {
   // Fetch the current post data when the component mounts
   useEffect(() => {
     if (id) { // Ensure id is valid
-      axios.get(`http://localhost:8080/change/${id}`)
+      axios.get(`justhought.vercel.app/change/${id}`)
         .then((response) => {
           const { title, thought } = response.data;
           setTitle(title);
@@ -33,7 +33,7 @@ function Update() {
     event.preventDefault();
 
     try {
-      const response = await axios.put(`http://localhost:8080/change/${id}`, { title, thought });
+      const response = await axios.put(`justhought.vercel.app/change/${id}`, { title, thought });
       console.log('Response:', response);
       navigate("/show");
     } catch (error) {
